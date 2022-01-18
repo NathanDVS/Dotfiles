@@ -1,0 +1,46 @@
+add_newline = true
+
+[directory]
+style = "red bold"
+
+[username]
+style_user = "white bold"
+style_root = "black bold"
+format = "[Nathan](blue bold) "
+disabled = false
+show_always = true
+
+[docker_context]
+format = "via [🐋 $context](blue bold) "
+
+[python]
+format = "via [🐍 $version](green bold) "
+
+[java]
+format = "via [☕️ $version](208 bold) "
+
+[nodejs]
+format = "via [🤖 $version](green bold) "
+	
+[battery]
+format = "[$symbol$percentage]($style) "
+full_symbol = ""
+charging_symbol = ""
+discharging_symbol = ""
+
+[[battery.display]]
+threshold = 10
+style = "red bold"
+
+[[battery.display]]
+threshold = 30
+style = "yellow bold"
+
+[[battery.display]]
+threshold = 100
+style = "green bold"
+
+[time]
+disabled = false
+format = '[~](blue bold) [$time](yellow bold) '
+time_format = "%I:%M %p"
